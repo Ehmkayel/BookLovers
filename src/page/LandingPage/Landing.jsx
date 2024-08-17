@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../../components/Hero/Hero'
 import Trending from '../../components/Trending/Trending'
 import Deals from '../../components/Deals/Deals'
+import Contact from '../../components/Contact/Contact'
 
 const Landing = () => {
   return (
@@ -9,6 +10,7 @@ const Landing = () => {
         <Hero/>
         <Trending/>
         <Deals/>
+        <Contact/>
     </>
   )
 }
