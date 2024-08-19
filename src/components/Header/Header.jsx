@@ -26,13 +26,13 @@ const Header = () => {
             <a href="#categories" className="block hover:text-purple">Categories</a>
             <a href="#wishlist" className="block hover:text-purple">Wishlist</a>
             <a href="#contact" className="block hover:text-purple">Contact</a> 
-            <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 "><span>Order</span><FaCartPlus/></button>
+            <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 focus:outline-none focus:ring-2 focus:ring-purple-400 " aria-label="Order item"><span>Order</span><FaCartPlus/></button>
       
           
         </nav>
         {/* Mobile navigation button */}
         <div className="flex items-center lg:hidden ">
-        <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 mr-5 "><span className="hidden group-hover:block transition-all duration-200">Order</span><FaCartPlus/></button>
+        <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 mr-5 "><span className="hidden group-hover:block transition-all duration-200" aria-label="Order item">Order</span><FaCartPlus/></button>
           <button
             id="mobile-menu-button"
             className="focus:outline-none"
