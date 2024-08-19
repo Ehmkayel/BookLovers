@@ -9,7 +9,7 @@ const Button = ({link, className, children, ...props}) => {
   return (
     <button
         onClick={handleClick}
-        className={`bg-purple text-white border border-purple hover:bg-white hover:text-pink px-4 py-2 flex justify-center items-center  & ${className}`}
+        className={`bg-purple text-white border border-purple hover:bg-white hover:text-purple px-4 py-2 flex justify-center items-center  & ${className}`}
         {...props}>{children}</button>
   )
 }

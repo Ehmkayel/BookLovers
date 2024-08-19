@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { FaCartPlus } from "react-icons/fa"
 
 
 const Header = () => {
@@ -12,20 +13,25 @@ const Header = () => {
       <div className="container flex items-center justify-between max-w-[1440px] w-full mx-auto">
             {/* logo */}
         <div className='logo'>
-            <h2 className="cursor-pointer text-xl lg:text-2xl">Book<span className="text-purple font-bold">Lovers</span></h2>
+            <a href="/"><h2 className="text-xl lg:text-2xl">Book<span className="text-purple font-bold">Lovers</span></h2></a>
+            
         </div>
+        {/* Wishlist */}
+       
         {/* desktop navigation */}
         <nav className='menu-links hidden lg:flex space-x-8 items-center text-[14px] font-medium'>
-            <a href="/" className="block">Home</a>
-            <a href="#trending" className="block">Trending</a>
-            <a href="#deals" className="block">Deals</a>
-            <a href="#categories" className="block">Categories</a>
-            <a href="#contact" className="block">Contact</a>
-            
+            <a href="/" className="block hover:text-purple">Home</a>
+            <a href="#trending" className="block hover:text-purple">Trending</a>
+            <a href="#deals" className="block hover:text-purple">Deals</a>
+            <a href="#categories" className="block hover:text-purple">Categories</a>
+            <a href="#contact" className="block hover:text-purple">Contact</a> 
+            <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 "><span>Wishlist</span><FaCartPlus/></button>
+      
           
         </nav>
         {/* Mobile navigation button */}
         <div className="flex items-center lg:hidden ">
+        <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 mr-5 "><span className="hidden group-hover:block transition-all duration-200">Wishlist</span><FaCartPlus/></button>
           <button
             id="mobile-menu-button"
             className="focus:outline-none"

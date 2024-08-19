@@ -10,7 +10,7 @@ const ContactForm = () => {
             type='text'
             id='fullName'
             placeholder='Enter your name'
-            className='font-normal w-full xl:w-[600px] border border-purple outline-purple shadow-sm bg-white text-purple py-[6px] lg:py-[11px] px-[8px] lg:px-[11px]'
+            className='font-normal w-full xl:w-[600px] border outline-purple shadow-sm bg-white text-purple py-[6px] lg:py-[11px] px-[8px] lg:px-[11px]'
             autoComplete='off'
           />
         </div>
@@ -21,7 +21,7 @@ const ContactForm = () => {
             type='email'
             id='email'
             placeholder='example@gmail.com'
-            className='font-normal border border-purple outline-purple shadow-sm bg-white text-purple py-[6px] lg:py-[11px] px-[8px] lg:px-[11px] w-full xl:w-[292px]'
+            className='font-normal border outline-purple shadow-sm bg-white text-purple py-[6px] lg:py-[11px] px-[8px] lg:px-[11px] w-full xl:w-[292px]'
             autoComplete='off'
           />
         </div>
@@ -31,7 +31,7 @@ const ContactForm = () => {
             type='tel'
             id='number'
             placeholder='phone number'
-            className='font-normal border border-purple outline-purple shadow-sm bg-white text-purple py-[6px] lg:py-[11px] px-[8px] lg:px-[11px] w-full xl:w-[292px]'
+            className='font-normal border outline-purple shadow-sm bg-white text-purple py-[6px] lg:py-[11px] px-[8px] lg:px-[11px] w-full xl:w-[292px]'
             autoComplete='off'
           />
         </div>
@@ -43,7 +43,7 @@ const ContactForm = () => {
             type='text'
             id='message'
             placeholder='Type something...'
-            className='font-normal w-full border border-purple outline-purple shadow-sm bg-white text-purple py-[6px] lg:py-[11px] px-[8px] lg:px-[11px] h-20 xl:h-40'
+            className='font-normal w-full border  outline-purple shadow-sm bg-white text-purple py-[6px] lg:py-[11px] px-[8px] lg:px-[11px] h-20 xl:h-40'
             autoComplete='off'
           />
         </div>
