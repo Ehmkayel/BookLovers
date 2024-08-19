@@ -24,15 +24,15 @@ const Hero = () => {
             </figcaption>
             <figure className='hidden xl:block overflow-hidden '>
                 <img 
-                src="https://res.cloudinary.com/drphumgcb/image/upload/v1723848865/pexels-fotios-photos-1516983_juhzru.jpg" alt="hero-image"
+                src="https://res.cloudinary.com/drphumgcb/image/upload/v1724106184/pexels-fotios-photos-1516983_juhzru_1_qglxo1.jpg" alt="hero-image"
                 className='w-full h-[500px] object-cover border-gray-300  transform transition duration-500
-                hover:scale-105' width="800" height="450"/>
+                hover:scale-105' width="450" height="300"/>
 
             </figure>
             <figure className="overflow-hidden xl:hidden block w-full md:w-[50%] mt-8 md:mt-0">
                 <img
-                 src="https://res.cloudinary.com/drphumgcb/image/upload/v1723848865/pexels-fotios-photos-1516983_juhzru.jpg"
-                 className="w-full md:h-[450px] border-gray-300 transform transition duration-500 hover:scale-105" width="800" height="450"
+                 src="https://res.cloudinary.com/drphumgcb/image/upload/v1724106184/pexels-fotios-photos-1516983_juhzru_1_qglxo1.jpg"
+                 className="w-full md:h-[450px] border-gray-300 transform transition duration-500 hover:scale-105" width="450" height="300"
                  alt="Hero image"
           />
         </figure>
