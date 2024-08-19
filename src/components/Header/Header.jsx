@@ -24,14 +24,15 @@ const Header = () => {
             <a href="#trending" className="block hover:text-purple">Trending</a>
             <a href="#deals" className="block hover:text-purple">Deals</a>
             <a href="#categories" className="block hover:text-purple">Categories</a>
+            <a href="#wishlist" className="block hover:text-purple">Wishlist</a>
             <a href="#contact" className="block hover:text-purple">Contact</a> 
-            <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 "><span>Wishlist</span><FaCartPlus/></button>
+            <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 "><span>Order</span><FaCartPlus/></button>
       
           
         </nav>
         {/* Mobile navigation button */}
         <div className="flex items-center lg:hidden ">
-        <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 mr-5 "><span className="hidden group-hover:block transition-all duration-200">Wishlist</span><FaCartPlus/></button>
+        <button className="group flex items-center bg-gradient-to-r from-lightPurple to-purple px-5 py-1 text-lightPurple rounded-full transition-all duration-200 gap-4 mr-5 "><span className="hidden group-hover:block transition-all duration-200">Order</span><FaCartPlus/></button>
           <button
             id="mobile-menu-button"
             className="focus:outline-none"
@@ -81,6 +82,7 @@ const Header = () => {
                 <a href="#trending" className="block">Trending</a>
                 <a href="#deals" className="block">Deals</a>
                 <a href="#categories" className="block">Categories</a>
+                <a href="#wishlist" className="block">Wishlist</a>
                 <a href="#contact" className="block">Contact</a>
                 
             </div>
