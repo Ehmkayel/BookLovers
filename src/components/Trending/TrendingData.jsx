@@ -5,7 +5,7 @@ const TrendingBooks = [
     author: "Alex Michaelides",
     price: 14.99,
     details: "A psychological thriller that explores the mystery of a woman's silence after committing a murder.",
-    image: "https://res.cloudinary.com/drphumgcb/image/upload/f_auto,q_auto/v1723850875/patient_yqjrt8.jpg",
+    image: "https://res.cloudinary.com/drphumgcb/image/upload/c_fill,w_300,h_450/q_auto,f_auto/v1723850875/patient_yqjrt8.jpg" ,
     rating: 4.7,
     reviews: [
       { user: "Jane Doe", comment: "Absolutely gripping!", rating: 5 },

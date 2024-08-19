@@ -28,7 +28,7 @@ const Trending = () => {
             animate={isInView ? 'visible' : 'hidden'}
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {TrendingBooks.map((trending, index) => (
+              {TrendingBooks.map((book, index) => (
                 <motion.div
                   key={index}
                   variants={{
@@ -40,23 +40,23 @@ const Trending = () => {
                 >
                   <figure>
                     <img
-                      src={trending.image}
-                      alt={`Cover image of the book titled ${trending.title}`}
+                      src={book.image}
+                      alt={`Cover image of the book titled ${book.title}`}
                       className="w-full object-cover h-[300px]"
                       loading="lazy" 
                     />
                     <div className="p-4">
-                      <p className="text-lg font-bold">Rating: {trending.rating}⭐</p>
-                      <p className="text-lg text-purple font-semibold">${trending.price}</p>
+                      <p className="text-lg font-bold">Rating: {book.rating}⭐</p>
+                      <p className="text-lg text-purple font-semibold">${book.price.toFixed(2)}</p>
                     </div>
                   </figure>
                   <figcaption className="p-4">
-                    <h3 className="text-xl font-semibold">{trending.title}</h3>
-                    <h4 className="text-md font-medium text-purple">Author: {trending.author}</h4>
-                    <p className="text-sm text-gray-600 mt-2">{trending.details}</p>
+                    <h3 className="text-xl font-semibold">{book.title}</h3>
+                    <h4 className="text-md font-medium text-purple">Author: {book.author}</h4>
+                    <p className="text-sm text-gray-600 mt-2">{book.details}</p>
                     <div className="mt-3">
                       <h4 className="text-lg font-medium">Reviews:</h4>
-                      {trending.reviews.map((review, reviewIndex) => (
+                      {book.reviews.map((review, reviewIndex) => (
                         <blockquote key={reviewIndex} className="text-sm text-gray-700 italic mt-2">
                           "{review.comment}" - <span className="font-bold">{review.user}</span>
                         </blockquote>

@@ -9,8 +9,7 @@ const Contact = () => {
                 <ContactForm/>
             </figcaption>
             <figure className='lg:w-[50%]'>
-                <img src="https://res.cloudinary.com/drphumgcb/image/upload/v1723853147/pexels-olly-789822_fledmu.jpg" alt="contact image" className="border-gray-300  transform transition duration-500
-                hover:scale-105 w-full lg:h-[500px] object-cover"/>
+                <img src="https://res.cloudinary.com/drphumgcb/image/upload/c_fill,w_600,h_400/q_auto,f_auto/v1723853147/pexels-olly-789822_fledmu.jpg" alt="contact image" className="border-gray-300  transform transition duration-500 hover:scale-105 w-full lg:h-[500px] object-cover"/>
             </figure>
            
             

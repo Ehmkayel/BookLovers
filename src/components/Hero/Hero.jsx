@@ -7,7 +7,7 @@ const Hero = () => {
     <main className='pt-[4rem] md:pt-[8rem]'>
         <section className='container flex flex-col items-center justify-between max-w-[1440px] w-full  md:flex-row px-4 lg:px-[5rem] mx-auto'>
             <figcaption className='flex flex-col space-y-3 md:space-y-6 text-center md:text-left mb-8  w-full md:w-[60%] xl:w-[50%]'>
-                <h2 className='heading text-2xl lg:text-4xl xl:text-6xl leading-[30px] lg:leading-[78px] font-normal'>Reading a book can change your life so <span className='text-purple font-bold'>Start Reading!</span></h2>
+                <h2 className='heading text-2xl lg:text-4xl xl:text-6xl leading-[30px] xl:leading-[78px] font-normal'>Reading a book can change your life so <span className='text-purple font-bold'>Start Reading!</span></h2>
                 <p className='text-base lg:text-lg max-w-[505px]'>Discover captivating stories and insightful knowledge. Your next great read is just a click away. Explore our vast collection and immerse yourself in the world of books.</p>
                 <div className='flex flex-col md:flex-row gap-5 items-center'>
                 <Button ariaLabel='Order item'>Order Now</Button>
