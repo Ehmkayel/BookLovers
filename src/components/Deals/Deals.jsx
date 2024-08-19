@@ -18,7 +18,8 @@ const Deals = () => {
             variants={{
               hidden: { opacity: 0, y: 100 }, 
               visible: {
-                opacity: 1, y: 0,             
+                opacity: 1, 
+                y: 0,             
                 transition: {
                   staggerChildren: 0.2,       
                   duration: window.innerWidth < 768 ? 1 : 1.5, 
@@ -46,6 +47,7 @@ const Deals = () => {
                       src={offer.image}
                       alt={offer.title}
                       className="w-full object-cover h-[300px]"
+                      loading="lazy" 
                     />
                     <div className="p-4">
                       <p className="text-lg font-bold">Rating: {offer.rating}⭐</p>

@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 
 const Trending = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { triggerOnce: false }); 
+  const isInView = useInView(ref, { triggerOnce: false });
 
   return (
     <main className="container max-w-[1440px] mx-auto px-4" id="trending">
@@ -13,7 +13,7 @@ const Trending = () => {
           <h2 className="heading text-3xl md:text-5xl text-center mb-10">Trending Books</h2>
           <motion.div
             variants={{
-              hidden: { opacity: 0, y: 100 },  
+              hidden: { opacity: 0, y: 100 },
               visible: {
                 opacity: 1,
                 y: 0,
@@ -32,8 +32,8 @@ const Trending = () => {
                 <motion.div
                   key={index}
                   variants={{
-                    hidden: { opacity: 0, y: 50 },  
-                    visible: { opacity: 1, y: 0 },   
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
                   }}
                   transition={{ duration: 0.6, ease: 'easeOut' }}
                   className="bg-white rounded-lg shadow-lg overflow-hidden"
@@ -41,8 +41,9 @@ const Trending = () => {
                   <figure>
                     <img
                       src={trending.image}
-                      alt={`Cover of ${trending.title}`}
+                      alt={`Cover image of the book titled ${trending.title}`}
                       className="w-full object-cover h-[300px]"
+                      loading="lazy" 
                     />
                     <div className="p-4">
                       <p className="text-lg font-bold">Rating: {trending.rating}⭐</p>
