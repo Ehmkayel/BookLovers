@@ -9,6 +9,9 @@ body{
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .heading{
   font-family: "Marcellus SC", serif;

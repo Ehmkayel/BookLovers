@@ -3,8 +3,8 @@ import TrendingBooks from './TrendingData';
 
 const Trending = () => {
   return (
-    <main className="container max-w-[1440px] mx-auto px-4">
-      <section className="mt-10 lg:mt-[6rem]">
+    <main className="container max-w-[1440px] mx-auto px-4" id="trending">
+      <section className="mt-10 lg:mt-[6rem]" >
         <h2 className="heading text-3xl md:text-5xl text-center mb-10">Trending Books</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {TrendingBooks.map((trending, index) => (

@@ -16,11 +16,11 @@ const Header = () => {
         </div>
         {/* desktop navigation */}
         <nav className='menu-links hidden lg:flex space-x-8 items-center text-[14px] font-medium'>
-            <a href="/services" className="block">Home</a>
-            <a href="" className="block">Trending</a>
-            <a href="" className="block">Deals</a>
-            <a href="" className="block">Categories</a>
-            <a href="" className="block">Contact</a>
+            <a href="/" className="block">Home</a>
+            <a href="#trending" className="block">Trending</a>
+            <a href="#deals" className="block">Deals</a>
+            <a href="#categories" className="block">Categories</a>
+            <a href="#contact" className="block">Contact</a>
             
           
         </nav>
@@ -72,10 +72,10 @@ const Header = () => {
                 </button>
                 {/* Mobile menu navigation */}
                 <a href="/" className="block">Home</a>
-                <a href="" className="block">Trending</a>
-                <a href="" className="block">Deals</a>
-                <a href="" className="block">Categories</a>
-                <a href="" className="block">Contact</a>
+                <a href="#trending" className="block">Trending</a>
+                <a href="#deals" className="block">Deals</a>
+                <a href="#categories" className="block">Categories</a>
+                <a href="#contact" className="block">Contact</a>
                 
             </div>
         </div>
