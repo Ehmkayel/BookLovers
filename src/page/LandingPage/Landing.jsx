@@ -4,6 +4,7 @@ import Trending from '../../components/Trending/Trending'
 import Deals from '../../components/Deals/Deals'
 import Contact from '../../components/Contact/Contact'
 import Categories from '../../components/Categories/Categories'
+import Wishlist from '../../components/Wishlist/Wishlist'
 
 const Landing = () => {
   return (
@@ -12,6 +13,7 @@ const Landing = () => {
         <Trending/>
         <Deals/>
         <Categories/>
+        <Wishlist/>
         <Contact/>
     </>
   )

@@ -1,35 +1,38 @@
-import React from 'react'
-import Layout from './components/Layout/Layout'
-import Landing from './page/LandingPage/Landing'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import OrderNow from './page/OrderNow/OrderNow'
-import Confirmation from './page/OrderNow/Confirmation'
+import React from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import Landing from './page/LandingPage/Landing';
+import OrderNow from './page/OrderNow/OrderNow';
+import Confirmation from './page/OrderNow/Confirmation';
+import { WishlistProvider } from '../src/Utilities/WishListContext'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
+    element: <Layout />,
     children: [
       {
         index: true,
-        element: <Landing/>
+        element: <Landing />
       },
       {
         path: '/order',
-        element: <OrderNow/>
+        element: <OrderNow />
       },
       {
         path: '/confirmation',
-        element: <Confirmation/>
+        element: <Confirmation />
       }
     ]
   }
-])
+]);
 
-export default function App(){
-  return(
+export default function App() {
+  return (
     <React.StrictMode>
-      <RouterProvider router={router}/>
+      <WishlistProvider>
+        <RouterProvider router={router} />
+      </WishlistProvider>
     </React.StrictMode>
-  )
+  );
 }

@@ -1,15 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import BookData from "./BookData";
 import Button from "../Reusable/Button";
 import Order from "../Reusable/Order";
 import BookCategories from "./BookCategories";
+import { getWishlist } from '../../Utilities/LocalStorage';
 
 const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-    // Filter books based on selected category or display all if "All" is selected
-    const filteredBooks = selectedCategory === "All"
-    ? BookData
-    : BookData.filter(book => book.category === selectedCategory);
+  const [wishlist, setWishlist] = useState([]);
+
+  
+  useEffect(() => {
+    setWishlist(getWishlist());
+  }, []);
+
+  const handleWishlistUpdate = () => {
+    const updatedWishlist = getWishlist();
+    setWishlist(updatedWishlist); 
+  };
+
+  // Filter books based on selected category or display all if "All" is selected
+  const filteredBooks = selectedCategory === "All" ? BookData : BookData.filter(book => book.category === selectedCategory);
 
   return (
     <main className="container max-w-[1440px] mx-auto px-4" id="categories">
@@ -30,13 +41,12 @@ const Categories = () => {
                 <div className="p-4 flex justify-between items-center">
                   <p className="text-lg text-purple font-semibold">${book.price}</p>
                   <p className="text-lg font-bold">{book.rating}⭐</p>
-                  <Order order="wishlist" />
+                  <Order order="wishlist" book={book} onWishlistUpdate={handleWishlistUpdate} />
                 </div>
                 <h3 className="text-xl font-semibold">{book.title}</h3>
                 <h4 className="text-md font-medium text-purple">Author: {book.author}</h4>
                 <p className="text-sm text-gray-600 mt-2">{book.description}</p>
-                  <Button ariaLabel='Order item' link='/order' className='mt-3 rounded-full'>Order Now</Button>
-                
+                <Button ariaLabel='Order item' link='/order' className='mt-3 rounded-full'>Order Now</Button>
               </figcaption>
             </figure>
           ))}
