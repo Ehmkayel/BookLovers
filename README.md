@@ -19,7 +19,7 @@ This is the third task for Programmify Pip3 internship
 
 ### Introduction
 
-![Landing Page]()
+![Landing Page](./SiteViews/desktop.png)
 
 BookLovers is a responsive web application designed to help users explore and manage their wishlists. The application is built using React and Tailwind CSS, and it uses local storage for data persistence
 
@@ -103,6 +103,23 @@ If you'd like to contribute to this project, please follow these steps:
 
 ## Site Views
 
+- The view on desktop
+![Desktop](./SiteViews/desktop.png)
+
+- The view on Laptop (1440px)
+![Extra Large Laptop](./SiteViews/ExtraLargeScreens.png)
+
+- The view on Laptop
+![Laptop](./SiteViews/laptop.png)
+
+- The view on tablet
+![Tablet](./SiteViews/tablet.png)
+
+- The view on Mobile
+![Mobile](./SiteViews/mobile.png)
+
+- The view with no wishlist added
+![No wishlist Added](./SiteViews/noWishlist.png)
 
 
 ## Get in Touch
