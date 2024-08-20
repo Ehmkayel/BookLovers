@@ -1,7 +1,7 @@
 # BookLovers 
 
 Project Name: BookLovers
-This is the third task for programmify Pip3 internship
+This is the third task for Programmify Pip3 internship
 
 
 ## Table of Contents
@@ -21,7 +21,7 @@ This is the third task for programmify Pip3 internship
 
 ![Landing Page]()
 
-BookLovers is a responsive web application designed to help users explore and order books, and add to their wishlists. The application is built using React and Tailwind CSS, and it uses local storage for data persistence
+BookLovers is a responsive web application designed to help users explore and manage their wishlists. The application is built using React and Tailwind CSS, and it uses local storage for data persistence
 
 ### Features
 
@@ -40,16 +40,22 @@ To get started, simply click on the link [BookLovers](https://book-lovers-sepia.
 
 ### User Guide
 
-1. 
-2. 
-3. 
+1. Explore Books: Browse through the trending books. deals and categories.
+2. View Details: Each Book has a detailed information which you can see on each cards.
+3. Add to Wishlist: Use the wishlist feature to save books for future reference; the button with the cart icon
+4. You can also click on order to view it, but kindly note that you can't order directly
+ 
+
+- Disclaimer
+
+Please note that this is a practice project for my internship at Programmify Pip3. Ordering books on this website is not functional, it is solely intended to showcase my skills and serve as a demonstration. The website is for educational and portfolio purposes only.
 
 ### Installation
 
 1. Clone the repository
 
 ```bash
- git clone https://github.com/Ehmkayel/BucketList
+ git clone https://github.com/Ehmkayel/BookLovers
 ```
 2. Change directory
 
