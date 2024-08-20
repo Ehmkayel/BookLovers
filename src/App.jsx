@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from './components/Layout/Layout'
 import Landing from './page/LandingPage/Landing'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import OrderNow from './page/OrderNow/OrderNow'
+import Confirmation from './page/OrderNow/Confirmation'
 
 const router = createBrowserRouter([
   {
@@ -11,6 +13,14 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing/>
+      },
+      {
+        path: '/order',
+        element: <OrderNow/>
+      },
+      {
+        path: '/confirmation',
+        element: <Confirmation/>
       }
     ]
   }

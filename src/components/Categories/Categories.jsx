@@ -35,7 +35,8 @@ const Categories = () => {
                 <h3 className="text-xl font-semibold">{book.title}</h3>
                 <h4 className="text-md font-medium text-purple">Author: {book.author}</h4>
                 <p className="text-sm text-gray-600 mt-2">{book.description}</p>
-                <Button className="mt-3">{book.category}</Button>
+                  <Button ariaLabel='Order item' link='/order' className='mt-3 rounded-full'>Order Now</Button>
+                
               </figcaption>
             </figure>
           ))}

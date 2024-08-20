@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import specialOffers from './DealsData';
 import { motion, useInView } from 'framer-motion';
+import Button from '../Reusable/Button';
 
 const Deals = () => {
   const ref = useRef(null);
@@ -59,6 +60,7 @@ const Deals = () => {
                     <h3 className="text-xl font-semibold">{offer.title}</h3>
                     <h4 className="text-md font-medium text-purple">Author: {offer.author}</h4>
                     <p className="text-sm text-gray-600 mt-2">{offer.details}</p>
+                    <Button ariaLabel='Order item' link='/order' className='my-3 rounded-full'>Order Now</Button>
                   </figcaption>
                 </motion.div>
               ))}

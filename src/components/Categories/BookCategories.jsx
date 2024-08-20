@@ -16,11 +16,11 @@ const categories = [
 
 const BookCategories = ({ selectedCategory, setSelectedCategory }) => {
   return (
-    <section className="flex mb-8 gap-5 flex-wrap">
+    <section className=" flex justify-center mb-8 gap-5 flex-wrap">
       {categories.map(category => (
         <Button
           key={category}
-          className={`rounded-full ${selectedCategory === category ? 'bg-purple-500 text-white' : ''}`}
+          className={`rounded-full ${selectedCategory === category ? 'bg-purple text-white' : ''}`}
           onClick={() => setSelectedCategory(category)}
         >
           {category}

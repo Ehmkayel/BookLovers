@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import TrendingBooks from './TrendingData';
 import { motion, useInView } from 'framer-motion';
+import Button from '../Reusable/Button';
 
 const Trending = () => {
   const ref = useRef(null);
@@ -61,6 +62,7 @@ const Trending = () => {
                           "{review.comment}" - <span className="font-bold">{review.user}</span>
                         </blockquote>
                       ))}
+                      <Button ariaLabel='Order item' link='/order' className='my-3 rounded-full'>Order Now</Button>
                     </div>
                   </figcaption>
                 </motion.div>
