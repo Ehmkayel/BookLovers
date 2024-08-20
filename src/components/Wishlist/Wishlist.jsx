@@ -6,7 +6,7 @@ const Wishlist = () => {
   const { wishlist, handleRemoveFromWishlist } = useWishlist();
 
   return (
-    <main>
+    <main className="container max-w-[1440px] mx-auto px-4" id="wishlist">
       <section id="wishlist" className="wishlist-section mt-10 lg:mt-[8rem]">
         <h2 className="heading text-3xl md:text-5xl text-center mb-10">
           Your Wishlist
