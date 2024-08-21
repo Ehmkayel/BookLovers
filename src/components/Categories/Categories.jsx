@@ -38,10 +38,10 @@ const Categories = () => {
                 loading="lazy"
               />
               <figcaption className="p-2">
-                <div className="p-4 flex justify-between items-center">
+                <div className="p-1 flex justify-between items-center">
                   <p className="text-lg text-purple font-semibold">${book.price}</p>
                   <p className="text-lg font-bold">{book.rating}⭐</p>
-                  <Order order="wishlist" book={book} onWishlistUpdate={handleWishlistUpdate} />
+                  <Order order="Add to wishlist" book={book} onWishlistUpdate={handleWishlistUpdate} />
                 </div>
                 <h3 className="text-xl font-semibold">{book.title}</h3>
                 <h4 className="text-md font-medium text-purple">Author: {book.author}</h4>

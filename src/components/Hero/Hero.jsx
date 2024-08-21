@@ -12,7 +12,7 @@ const Hero = () => {
                 <div className='flex flex-col md:flex-row gap-5 items-center'>
                 <Button ariaLabel='Order item' link='/order'>Order Now</Button>
                 <div className="group relative">
-                    <input type="text" placeholder="search" className="w-[200px] group-hover:w-[300px] px-3 py-2 focus:outline-none border border-purple focus:border-2 focus:border-purple transition-all duration-300 "/>
+                    <input type="text" placeholder="search" className="w-[200px] group-hover:w-[300px] px-3 py-1 focus:outline-none border border-purple focus:border-2 focus:border-purple transition-all duration-300 "/>
                     <FaSearch className="text-violet-900 group-hover:text-purple absolute top-1/2 right-4 -translate-y-1/2"/>
                 </div>
                 

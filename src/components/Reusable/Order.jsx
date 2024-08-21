@@ -23,8 +23,8 @@ const Order = ({ ariaLabel, order, book, link, ...props }) => {
       aria-label={ariaLabel}
       {...props}
     >
-      {order && <span className="hidden group-hover:block transition-all duration-200">{order}</span>}
-      <FaCartArrowDown />
+      {order && <span className="group-hover:block transition-all duration-200">{order}</span>}
+      {/* <FaCartArrowDown /> */}
     </button>
   );
 };

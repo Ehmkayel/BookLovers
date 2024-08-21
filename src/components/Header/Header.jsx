@@ -54,9 +54,9 @@ const Header = () => {
                         Categories
                     </a>
                     <a
-                        href="#wishlist"
-                        className={`hover:text-purple ${activeLink === '#wishlist' ? 'text-purple font-bold' : ''}`}
-                        onClick={() => handleLinkClick('#wishlist')}
+                        href="/wishlist"
+                        className={`hover:text-purple ${activeLink === '/wishlist' ? 'text-purple font-bold' : ''}`}
+                        onClick={() => handleLinkClick('/wishlist')}
                     >
                         Wishlist
                     </a>
@@ -150,9 +150,9 @@ const Header = () => {
                             Categories
                         </a>
                         <a
-                            href="#wishlist"
-                            className={`block ${activeLink === '#wishlist' ? 'text-purple font-bold' : ''}`}
-                            onClick={() => handleLinkClick('#wishlist')}
+                            href="/wishlist"
+                            className={`block ${activeLink === '/wishlist' ? 'text-purple font-bold' : ''}`}
+                            onClick={() => handleLinkClick('/wishlist')}
                         >
                             Wishlist
                         </a>

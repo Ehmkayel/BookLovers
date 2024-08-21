@@ -1,6 +1,6 @@
 import React from 'react';
-import { useWishlist } from '../../Utilities/WishListContext';
-import Button from '../Reusable/Button';
+import { useWishlist } from '../../Utilities/WishListContext'
+import Button from '../../components/Reusable/Button'
 
 const Wishlist = () => {
   const { wishlist, handleRemoveFromWishlist } = useWishlist();
@@ -20,7 +20,6 @@ const Wishlist = () => {
             wishlist.map((item) => (
               <li key={item.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
                 <figure className="w-full">
-                  {/* Consider adding a placeholder image here */}
                   <img
                     src={item.image}
                     alt={`Cover image of the book titled ${item.title}`}

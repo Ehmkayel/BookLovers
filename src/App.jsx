@@ -5,6 +5,7 @@ import Landing from './page/LandingPage/Landing';
 import OrderNow from './page/OrderNow/OrderNow';
 import Confirmation from './page/OrderNow/Confirmation';
 import { WishlistProvider } from '../src/Utilities/WishListContext'
+import Wishlist from './page/Wishlist/Wishlist';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/confirmation',
         element: <Confirmation />
+      },
+      {
+        path: '/wishlist',
+        element: <Wishlist/>
       }
     ]
   }
